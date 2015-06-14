@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GTD Tools个人任务管理系统 --- raimonfuns</title>
+
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GTD Tools</h1>
+    </header>   
+    <div id="wrap" class="wrap clearfix">
+        <div class="blk-task fl">
+            <div class="task-cont">
+                <div class="titleWrap clearfix">
+                    <div class="task-title">
+                        <h2 class="task-title-text"></h2>
+                        <span class="task-title-input">
+                            <input id="title-input" type="text" placeholder="请输入任务名称">
+                        </span>
+                        <div id="btn-wrap" class="btn-wrap clearfix">
+                            <ul class="task-btn switch-btn">
+                                <li><a href="javascript:void(0);" id="finish-btn" class="finish-btn"></a></li>
+                                <li><a href="javascript:void(0);" id="edit-btn" class="edit-btn"></a></li>
+                            </ul> 
+                            <ul class="task-btn edit-switch-btn">
+                                <li><a href="javascript:void(0);" class="if-save-btn ok-btn">保存</a></li>
+                                <li><a href="javascript:void(0);" class="if-save-btn save-btn cancel-btn">取消</a></li>
+                            </ul> 
+                        </div>  
+                    </div>  
+                </div>
+                <div class="task-date">
+                    <h3 class="task-date-text"></h3>
+                    <span class="task-date-input">
+                        <label>任务日期：</label><input id="date-input" type="text" placeholder="请输入任务日期，例如：2015-01-01">
+                    </span>
+                </div>
+                <div class="taskContent">
+                    <p class="main-content"></p>
+                    <span class="content-textarea">
+                        <textarea id="content-textarea" placeholder="请输入任务内容"></textarea>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="blk-aside fl">
+            <div class="category-wrap">
+                <h2>所有任务 (<span class="taskCount"></span>)</h2>
+                <div class="list-content">
+                    <h3>分类列表</h3>
+                    <ul class="note-list">
+                        <li class="TaskCategory group task-dft" data-id="/0">
+                            <a href="javascript:void(0);" class="list-item on ico-task"><span>默认分类</span><span> (0) </span><i class="ico-delete"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="addCategory" class="addBtnWrap"><a class="addBtn">新增分类</a></div>
+        </div>
+        <div id="process" class="blk-list fl">
+            <div class="process">
+                <div class="process-list-wrap">
+                    <ul class="process-list clearfix">
+                        <li class="list-item"><a href="javascript:void(0);" class="active">所有</a></li>
+                        <li class="list-item"><a href="javascript:void(0);">未完成</a></li>
+                        <li class="list-item"><a href="javascript:void(0);">已完成</a></li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <ul class="cont-list">
+                    </ul>
+                </div>
+            </div>
+            <div id="addTask" class="addBtnWrap"><a class="addBtn">新增任务</a></div>
+        </div>
+    </div>
+    
+    <div id="prompt-box-wrap" class="prompt-box-wrap box-wrap">
+        <div class="box-content">
+            <label class="boxText"></label>
+            <input type="text" class="boxInput" size="15" />
+            <div class="boxBtn">
+                <a class="boxSubmit">确定</a>
+            </div>
+        </div>
+        <p class="submit-ok">发送成功!</p>
+    </div>
+
+    <div id="confirm-box-wrap" class="confirm-box-wrap box-wrap">
+        <div class="box-content">
+            <p class="boxText"></p>
+            <div class="boxBtn">
+                <a class="boxBtnSure">确定</a> 
+                <a class="boxBtnCancel">取消</a> 
+            </div>
+        </div>
+        <p class="submit-ok">发送成功!</p>
+    </div>
+
+    <div id="overlayCode" class="overlayCode"></div>
+    
+    <div class="error-box">
+        <p class="error"><span id="error" class="error-content">日期格式错误</span></p>
+    </div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

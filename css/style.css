@@ -1,0 +1,528 @@
+/* line 9, style.scss */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 10, style.scss */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, img, div, input {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, style.scss */
+body {
+  font-size: 12px;
+  font-family: 'Microsoft Yahei' arial;
+  color: #333;
+  position: relative;
+}
+
+/* line 12, style.scss */
+img {
+  border: none;
+}
+
+/* line 13, style.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 14, style.scss */
+input, select, textarea {
+  outline: none;
+  border: none;
+  background: #FFF;
+}
+
+/* line 15, style.scss */
+textarea {
+  resize: none;
+}
+
+/* line 16, style.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 19, style.scss */
+  body {
+    width: 1000px;
+  }
+}
+/* line 23, style.scss */
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 24, style.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 27, style.scss */
+.fl {
+  float: left;
+}
+
+/* line 30, style.scss */
+.wrap {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+}
+/* line 35, style.scss */
+.wrap .blk-aside,
+.wrap .blk-list {
+  position: relative;
+  height: 100%;
+}
+/* line 40, style.scss */
+.wrap .blk-aside {
+  width: 230px;
+  margin-left: -100%;
+  border-right: 1px solid #ccc;
+}
+/* line 45, style.scss */
+.wrap .blk-list {
+  width: 230px;
+  margin-left: -100%;
+  left: 231px;
+  border-right: 1px solid #ccc;
+}
+/* line 51, style.scss */
+.wrap .blk-task {
+  width: 100%;
+  height: 100%;
+}
+/* line 54, style.scss */
+.wrap .blk-task .task-cont {
+  margin-left: 462px;
+  height: 100%;
+}
+
+/* line 62, style.scss */
+header {
+  width: 100%;
+  height: 60px;
+}
+/* line 65, style.scss */
+header h1 {
+  height: 58px;
+  line-height: 58px;
+  border: 1px solid #ccc;
+  text-indent: 12px;
+  color: #999;
+  background: #ddd;
+}
+
+/* line 77, style.scss */
+.blk-aside h2, .blk-aside h3 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* line 83, style.scss */
+.blk-aside h2 {
+  padding: 27px 0 0 11px;
+}
+/* line 87, style.scss */
+.blk-aside .list-content h3 {
+  padding: 21px 0 0 12px;
+}
+/* line 91, style.scss */
+.blk-aside .note-list {
+  padding: 7px 0 0 19px;
+}
+/* line 93, style.scss */
+.blk-aside .note-list .category-wrap {
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+}
+
+/* line 103, style.scss */
+.TaskCategory {
+  line-height: 28px;
+}
+/* line 105, style.scss */
+.TaskCategory .list-item {
+  display: block;
+}
+/* line 108, style.scss */
+.TaskCategory .ico-task {
+  padding-left: 32px;
+  background: url(../images/icon.png) left 9px no-repeat;
+}
+/* line 112, style.scss */
+.TaskCategory .ico-task:hover, .TaskCategory .ico-task-sec:hover {
+  background-color: #eee;
+}
+/* line 114, style.scss */
+.TaskCategory .ico-task:hover .ico-delete, .TaskCategory .ico-task-sec:hover .ico-delete {
+  display: inline-block;
+}
+/* line 118, style.scss */
+.TaskCategory .ico-task-sec {
+  margin-left: 21px;
+  padding-left: 21px;
+  background: url(../images/icon.png) left -20px no-repeat;
+}
+/* line 126, style.scss */
+.TaskCategory .on {
+  background-color: #ddd;
+}
+/* line 129, style.scss */
+.TaskCategory .ico-delete {
+  display: none;
+  float: right;
+  width: 12px;
+  height: 12px;
+  margin-top: 8px;
+  padding-right: 18px;
+  background: url(../images/icon.png) left -55px no-repeat;
+}
+
+/* line 140, style.scss */
+.TaskCategory-fold ul {
+  display: none;
+}
+
+/* line 144, style.scss */
+.addBtnWrap {
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+}
+/* line 152, style.scss */
+.addBtnWrap .addBtn {
+  display: block;
+  width: 100px;
+  margin-left: 17px;
+  text-indent: 29px;
+  cursor: pointer;
+  font-size: 14px;
+  background: url(../images/icon.png) left -71px no-repeat;
+}
+
+/* line 164, style.scss */
+.process-list-wrap {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 167, style.scss */
+.process-list {
+  width: 156px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+/* line 171, style.scss */
+.process-list .list-item {
+  float: left;
+  padding: 0 4px;
+}
+/* line 174, style.scss */
+.process-list .list-item a {
+  display: block;
+  width: 42px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+/* line 182, style.scss */
+.process-list .list-item .active {
+  background: #fff;
+  border-color: #ccc;
+}
+
+/* line 189, style.scss */
+.process .cont {
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 43px;
+  bottom: 40px;
+}
+/* line 195, style.scss */
+.process .cont .taskTime {
+  line-height: 28px;
+  background: #fafaee;
+  text-indent: 15px;
+}
+/* line 199, style.scss */
+.process .cont .noteTitle {
+  line-height: 28px;
+  padding: 0 30px;
+}
+/* line 202, style.scss */
+.process .cont .noteTitle a {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 209, style.scss */
+.process .cont .on {
+  background: #ddd;
+}
+/* line 212, style.scss */
+.process .cont .finished a {
+  color: #61C141;
+  font-weight: bold;
+}
+
+/* line 220, style.scss */
+.titleWrap {
+  background: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 224, style.scss */
+.task-title-text,
+.task-title-input,
+.task-date-text,
+.task-date-input {
+  height: 52px;
+  line-height: 52px;
+  text-indent: 16px;
+}
+
+/* line 232, style.scss */
+.task-title-input {
+  float: left;
+  width: 80%;
+}
+
+/* line 236, style.scss */
+.task-date-text {
+  background: #fafaee;
+}
+
+/* line 239, style.scss */
+.main-content {
+  padding: 16px;
+}
+
+/* line 242, style.scss */
+.btn-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 247, style.scss */
+.task-btn {
+  float: right;
+  padding: 14px 12px 0 0;
+  width: 90px;
+}
+/* line 251, style.scss */
+.task-btn a {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+/* line 258, style.scss */
+.task-btn .finish-btn {
+  margin-right: 23px;
+}
+/* line 261, style.scss */
+.task-btn .ok-btn {
+  margin-right: 14px;
+}
+/* line 264, style.scss */
+.task-btn .finish-btn {
+  background: url(../images/icon.png) left -120px no-repeat;
+}
+/* line 267, style.scss */
+.task-btn .edit-btn {
+  background: url(../images/icon.png) left -163px no-repeat;
+}
+
+/* line 271, style.scss */
+.edit-switch-btn {
+  padding: 14px 18px 0 0;
+}
+/* line 273, style.scss */
+.edit-switch-btn a {
+  background: #ddd;
+  padding: 0 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* line 282, style.scss */
+.task-title-input,
+.task-date-input,
+.content-textarea {
+  display: none;
+}
+
+/* line 287, style.scss */
+.task-title-input input {
+  background: #f2f2f2;
+  width: 100%;
+}
+
+/* line 291, style.scss */
+.task-date-input input {
+  width: 80%;
+}
+
+/* line 294, style.scss */
+.task-title-input input,
+.task-date-input label,
+.task-date-input input,
+.content-textarea textarea {
+  font-size: 16px;
+}
+
+/* line 300, style.scss */
+.content-textarea {
+  height: 300px;
+  padding-left: 15px;
+}
+
+/* line 304, style.scss */
+.content-textarea textarea {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 308, style.scss */
+.edit-switch-btn {
+  display: none;
+}
+
+/* line 312, style.scss */
+.edit-mode .task-title-text,
+.edit-mode .task-date-text,
+.edit-mode .main-content,
+.edit-mode .switch-btn {
+  display: none;
+}
+/* line 316, style.scss */
+.edit-mode .task-title-input,
+.edit-mode .task-date-input,
+.edit-mode .content-textarea,
+.edit-mode .edit-switch-btn {
+  display: block;
+}
+
+/* line 323, style.scss */
+.overlayCode {
+  background: #272822;
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+/* line 333, style.scss */
+.box-wrap {
+  background: #fff;
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 330px;
+  z-index: 10;
+  display: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 346, style.scss */
+.submit-ok {
+  color: #272822;
+  font-size: 16px;
+  padding: 36px;
+  text-align: center;
+  display: none;
+}
+
+/* line 354, style.scss */
+.box-content {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* line 359, style.scss */
+.boxInput {
+  margin: 0 6px;
+  padding: 4px;
+  width: 86px;
+  border: 1px solid #999;
+}
+
+/* line 366, style.scss */
+.boxBtn {
+  margin-top: 15px;
+}
+
+/* line 370, style.scss */
+.boxSubmit,
+.boxBtnSure,
+.boxBtnCancel {
+  display: inline-block;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  width: 60px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 382, style.scss */
+.boxSubmit,
+.boxBtnSure {
+  background: #61C141;
+}
+
+/* line 387, style.scss */
+.confirm-box-wrap .boxText {
+  line-height: 20px;
+}
+
+/* line 391, style.scss */
+.error {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  color: red;
+  text-align: center;
+}
+/* line 397, style.scss */
+.error .error-content {
+  display: none;
+  padding: 4px 8px;
+  background: #FAFAEE;
+  border-radius: 3px;
+}
